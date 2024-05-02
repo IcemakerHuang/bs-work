@@ -180,6 +180,28 @@
 			color: white;
 		}
         /* section-4 */
+        .title-cover:hover{
+            box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+        }
+        .title-cover:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                120deg,
+                transparent,
+                rgba(146, 148, 248, 0.4),
+                transparent
+            );
+            transition: all 650ms;
+            }
+
+        .title-cover:hover:before {
+            left: 100%;
+        }
     </style>
 
 <body>
@@ -427,7 +449,7 @@
         <div class="container d-flex flex-column align-items-center justify-content-center">
             <div class="row p-5 text-center">
                 <div class="col-12 m-1">
-                    <h1 class="m-3">NEWS & EVENTS</h1>
+                    <h1 class="m-3 title-cover">NEWS & EVENTS</h1>
                     <h5 class="fw-light ls-2">PRO SONET CONSUL MAIORUM GLORIATUR.</h5>
                 </div>
             </div>
